@@ -17,7 +17,7 @@ var Images     = require('./server/models/images');
 var fs         = require('fs');
 var cors       = require('cors');
 var cloudinary = require('cloudinary');
-var port 	   = process.env.PORT || 4000;        // set our port
+var port 	   = process.env.PORT || 4250;        // set our port
 
 // Configure Packages
 // =============================================
@@ -43,7 +43,7 @@ app.set('superSecret', config.secret); // secret variable
 
 // Configuring Cloudinary Image CDN
 cloudinary.config({ 
-  cloud_name: 'ddxzdm8df', 
+  cloud_name: config.cloudinaryCloudName, 
   api_key: config.cloudinaryAPIkey, 
   api_secret: config.cloudinaryAPIsecret
 });
