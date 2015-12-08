@@ -1,0 +1,22 @@
+<md-content layout="column" layout-align="center center" class="fullHeight background-color">
+<md-card>
+  <md-content>
+  <h2 class="md-display-1">Login</h2>
+  <form name="login-form" ng-submit="loginUser(loginForm)">
+  <md-input-container>
+  	<label>Email</label>
+    <input type="email" ng-model="loginForm.email" required>
+  </md-input-container>
+  <md-input-container>
+    <label>Password</label>
+    <input type="password" ng-model="loginForm.password" required>
+  </md-input-container>
+  <div layout="row" layout-margin>
+    <a ui-sref="getPassword" class="md-primary">Forgot Password?</a>
+  </div>
+  <md-button class="md-raised md-primary" type="submit">LOGIN</md-button>
+  </form>
+
+  </md-content>
+</md-card>
+</md-content>

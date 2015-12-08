@@ -1,0 +1,24 @@
+<md-content layout="column" layout-align="center center" class="background-color">
+  <h1 class="md-display-1 .primary-color">ArtFeed</h1>
+
+    <md-list>
+    	<md-list-item ng-repeat="art in newsfeed | orderBy:'-patronScore' ">
+    		<md-card>
+		      <img ng-src="{{art.img}}" class="md-card-image" alt="Washed Out">
+		      <md-card-content>
+		        <h2 class="md-title">{{art.title}}</h2>
+		        <div layout="row" layout-align="center">
+		        	<span flex>
+		        		Artist: {{art.artist}}
+		        	</span>
+		        	<span flex></span>
+		        	<span>
+		        		Score: {{art.patronScore}}
+		        	</span>
+		        </div>
+		      </md-card-content>
+		    </md-card>
+    	</md-list-item>
+    </md-list>
+
+</md-content>

@@ -1,0 +1,23 @@
+{
+  "name": "node-api",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scotch-io/node-token-authentication"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Briant Campbell",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "*",
+    "cloudinary": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "multer": "*"
+  }
+}
